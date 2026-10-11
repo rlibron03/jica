@@ -54,13 +54,13 @@ export default function DispatchDashboard() {
               {activeTab === "Load Slip" ? "Digital Load Slip" : activeTab}
             </h1>
             <p className="text-slate-500 dark:text-slate-400 mt-1">
-              {activeTab === "Load Slip" 
-                ? "Create and manage delivery records" 
+              {activeTab === "Load Slip"
+                ? "Create and manage delivery records"
                 : `Manage ${activeTab.toLowerCase()} for your business.`}
             </p>
           </div>
 
-          <button 
+          <button
             onClick={() => setIsDarkMode(!isDarkMode)}
             className="p-3 rounded-full bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-sm hover:bg-slate-100 dark:hover:bg-slate-700 transition-all"
             title="Toggle Theme"
